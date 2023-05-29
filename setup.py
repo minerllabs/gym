@@ -44,7 +44,8 @@ setup(
         "numpy>=1.18.0",
         "cloudpickle>=1.2.0,<1.7.0",
     ],
-    extras_require=extras,
+    # 30/05/2023: Removed extras_require to fix installation on some Python versions
+    #extras_require=extras,
     package_data={
         "gym": [
             "envs/mujoco/assets/*.xml",
